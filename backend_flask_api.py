@@ -83,5 +83,8 @@ def extract_bets_from_text(text):
             bets.append({"player": player, "prop": prop, "line": line_value, "result": "PENDING"})
     return bets
 
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
