@@ -1,0 +1,4 @@
+uploads/
+exports/
+__pycache__/
+.env
